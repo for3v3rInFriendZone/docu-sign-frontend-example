@@ -1,0 +1,30 @@
+<div class="content" role="main">
+    <div class="card-container">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Firstname</span>
+            </div>
+            <input type="text" [(ngModel)]="firstname" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Lastname</span>
+            </div>
+            <input type="text" [(ngModel)]="lastname" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group flex-nowrap mb-3">
+            <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+            </div>
+            <input type="text" [(ngModel)]="email" class="form-control" aria-label="Email"
+                aria-describedby="addon-wrapping">
+        </div>
+        <button class="btn btn-success button-sign" type="button" (click)="goToUrl()" [disabled]="loading">
+            <span *ngIf="loading" class="spinner-grow spinner-grow-sm" style="width: 3rem; height: 3rem;" role="status"
+                aria-hidden="true"></span>
+            {{loading ? 'Loading' : 'Sign Document'}}
+        </button>
+    </div>
+</div>
