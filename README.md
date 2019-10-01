@@ -7,6 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 NodeJS at least the version which is recommended on https://nodejs.org/en/ (currently it is *10.16.3*)
 
+After NodeJS has been successfully instaled, run `npm install` from terminal in the *root* folder of application, to get all of the necessary dependencies. 
+
 ## Development server
 
 Run `ng serve` from terminal in the *root* folder of application to run a **dev** server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
